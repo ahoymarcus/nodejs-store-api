@@ -9,7 +9,7 @@ const router = express.Router();
 
 
 router.route('/').get(getAllProducts);
-router.route('./static').get(getAllProductsStatic);
+router.route('/static').get(getAllProductsStatic);
 
 
 
