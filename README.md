@@ -34,7 +34,7 @@ Dependências:
 - Express JS
 - Mongoose
 - Nodemon
-
+- Express-async-errors
 
 
 
