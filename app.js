@@ -6,10 +6,11 @@ const express = require('express');
 const notFound = require('./middleware/not-found');
 const errorMiddleware = require('./middleware/error-handler');
 const connectDB = require('./db/connect');
+const productsRouter = require('./routes/products'); 
 
 
 
-const app = express();
+const app = express(); 
 
 // Middleware
 app.use(express.json());
@@ -19,6 +20,9 @@ app.get('/', (req, res) => {
 });
 
 // Products Route
+app.use('/api/v1/products', productsRouter);
+
+
 
 
 // 404
