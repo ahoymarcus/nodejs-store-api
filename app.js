@@ -6,7 +6,7 @@ const express = require('express');
 const notFound = require('./middleware/not-found');
 const errorMiddleware = require('./middleware/error-handler');
 const connectDB = require('./db/connect');
-const productsRouter = require('./routes/products'); 
+const productsRouter = require('./routes/products');  
 
 
 

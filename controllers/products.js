@@ -1,6 +1,9 @@
 // CONTROLLERS
 
 const getAllProductsStatic = async (req, res) => {
+	// Here, Express-async-errors
+	throw new Error('Testing async errors');
+	
 	res.status(200).json({ msg: 'products testing route' });
 };
 
