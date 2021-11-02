@@ -5,6 +5,7 @@ const express = require('express');
 
 const notFound = require('./middleware/not-found');
 const errorMiddleware = require('./middleware/error-handler');
+const connectDB = require('./db/connect');
 
 
 
@@ -30,10 +31,10 @@ app.use(errorMiddleware);
 
 const port = process.env.PORT || 3000;
 
-const start = () => {
+const start = async () => {
 	try {
 		// DB Connection
-		
+		await connectDB(process.env.MONGODB_SRV);
 		
 		app.listen(port, () => {
 			console.log(`Server listening at port ${port}`);
@@ -45,7 +46,7 @@ const start = () => {
 
 
 
-start();
+start();  
 
 
 
