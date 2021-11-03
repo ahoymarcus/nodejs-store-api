@@ -1,11 +1,18 @@
 # Task Manager App - Freecodecamp.org
 
 
-Estudo com o projeto **Freecodecamp** usando o backend javascript com Node-JS, para criar uma API de dados de Produtos.[^1]
+Estudo de backend Node-JS com o projeto **Freecodecamp**, para criar uma API de dados de Produtos.
+Esta API permite que se faça diversas consultas de maneira dinâmica através da passagem de parâmetros ou operadores de comparação para serem confrontrados em relação à base de dados da API.[^1]
 
 <br />
 
-Esta API permite que se faça a consulta aos dados passando parâmetros dinamicamente, inclusive permitindo o uso de critérios múltiplos de ordenação para os dados.
+Assim, é possível pesquisar os dados da API a partir dos seus campos, como nome, preço ou companhia, por exemplo.
+Também é possível selecionar quais os campos deve ser retornados pela pesquisa ou fazer a ordenação dos dados por diversos parâmetros simultaneamente (por exemplo, ordem alfabética e por preço).
+Finalmente, o usuário pode passar ainda múltiplos parâmetros comparativos para definir o retorno dos campos numéricos segundo condições de igualdade ou desigualdade. 
+
+
+
+
 
 <br />
 
@@ -62,6 +69,13 @@ Dependências:
 ![Imagem de uma query para retorno de dados com ordenamento e seleção de campos específicos](/public/images/query-dinamica-com-selecao-de-campos-e-ordenados.png)
 
 
+
+
+
+<br />
+
+### Finalmente, permitindo a passagem de operadores de comparação para realizar queries com os campos numéricos da API de produtos:                
+![Imagem da passagem de operadores de comparação para realizar queries com os campos numéricos da API de produtos](/public/images/query-dinamica-com-operadores-logicos.png)
 
 
 
