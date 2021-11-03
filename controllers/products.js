@@ -1,10 +1,18 @@
 // CONTROLLERS
+const Product = require('../models/product');
+
+
 
 const getAllProductsStatic = async (req, res) => {
-	// Here, Express-async-errors
-	throw new Error('Testing async errors');
+	// Here, the test with Express-async-errors
+	//throw new Error('Testing async errors');
 	
-	res.status(200).json({ msg: 'products testing route' });
+	
+	const products = await Product.find({ 
+		featured: true,  
+	});
+	
+	res.status(200).json({ nbHits: products.length, products });
 };
 
 const getAllProducts = async (req, res) => {
