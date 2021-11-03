@@ -24,7 +24,7 @@ const productSchema = mongoose.Schema({
 		type: Date,
 		default: Date.now()
 	},
-	products: {
+	company: {
 		type: String,
 		enum: {
 			values: ['ikea', 'liddy', 'caressa', 'marcos'],
