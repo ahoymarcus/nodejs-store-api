@@ -16,7 +16,7 @@ Finalmente, o usuário pode passar ainda múltiplos parâmetros comparativos par
 
 <br />
 
-Novamente, este projeto trás a mesma implementação modular para a aplicação, separando módulo para rota, para controladores para as rotas, para a criação do modelo de dados e para a conexão com o banco de dados MongoDB.
+Novamente, este projeto trás a mesma implementação modular para a aplicação implementada no **Task Manager app**, separando módulo para rota, para controladores para as rotas, para a criação do modelo de dados e para a conexão com o banco de dados MongoDB.
 
 
 <br />
