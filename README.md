@@ -23,9 +23,6 @@ Novamente, este projeto trás a mesma implementação modular para a aplicação
 
 Aqui nós também reaproveitamos os módulos customizados para tratamento de erro criados no projeto **Task Manager**. Assim, os configuramos no middleware do Express-JS para tratar exceções **404** e **500** de servidor.
 
-<br />
-
-Finalmente, culminando o projeto com a integração com o Frontend, criado pelo professor Smilga e que é servido pelo servidor através do middleware Static do Express-JS.
 
 
 
