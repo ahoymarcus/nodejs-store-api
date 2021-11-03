@@ -3,6 +3,9 @@
 
 Estudo com o projeto **Freecodecamp** usando o backend javascript com Node-JS, para criar uma API de dados de Produtos.[^1]
 
+<br />
+
+Esta API permite que se faça a consulta aos dados passando parâmetros dinamicamente, inclusive permitindo o uso de critérios múltiplos de ordenação para os dados.
 
 <br />
 
@@ -40,15 +43,25 @@ Dependências:
 
 <br />
 
-### Fazendo a primeira integração da API Tasks com o Frontend:              
-![Imagem Fazendo a primeira integração da API Tasks com o Frontend](/public/images/)
+### Retornando uma query básica de todos os dados existentes:              
+![Imagem de uma query básica de todos os dados existentes](/public/images/query-basica-retornando-todos-os-dados.png)
 
 
 
 <br />
 
-### Tela de edição para uma task:                
-![Imagem de uma Tela de edição para uma task](/public/images/)
+### Passando dinamicamente um query para procura de produtos a partir da propriedade **name** de um produto:                
+![Imagem de uma query para procura de produtos a partir da propriedade **name** de um produto](/public/images/query-dinamica-com-passagem-de-parametros.png)
+
+
+
+
+<br />
+
+### Agora, passando dinamicamente um query que retorna dados da API selecionando apenas os campos **name** e **price** e ordenando **name** de forma descendente e **price** de forma ascendente:                
+![Imagem de uma query para retorno de dados com ordenamento e seleção de campos específicos](/public/images/query-dinamica-com-selecao-de-campos-e-ordenados.png)
+
+
 
 
 
