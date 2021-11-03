@@ -1,4 +1,4 @@
-# Task Manager App - Freecodecamp.org
+# Store API - Freecodecamp.org
 
 
 Estudo de backend Node-JS com o projeto **Freecodecamp**, para criar uma API de dados de Produtos.
