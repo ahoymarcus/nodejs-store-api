@@ -47,6 +47,51 @@ Dependências:
 
 <br />
 
+Abaixo temos a URL base da rota para a API que de acordo com os parâmetros acrescentados permite o controle dinâmico do retorno dos dados:
+
+<br />
+
+```
+/api/v1/products
+```
+
+<br />
+
+
+A rota pode ser construída, por exemplo, das seguintes formas:
+
+<br /> 
+
+1. Get Products segundo a projeção de retornar apenas aqueles produtos que fazem referência à Company Ikea e ao Name 'dining table':
+```
+/api/v1/products?company=ikea&name=dining table
+```
+
+<br />
+
+4. Get Products ordenando de forma ascendente pelo parâmetro Price e usando filtro com condição numérica de valor dos preços retornados maiores que 20:
+```
+/api/v1/products?sort=price&numericFilters=price>20,rating>=5
+```
+
+<br />
+
+3. Get Products ordenando de forma ascendente pelo parâmetro Price e usando filtro com condição numérica de valor dos preços retornados maiores que 20. Finalmente, fazendo projeção para retornar apenas aqueles com Rating maior ou igual a 5:
+```
+/api/v1/products?sort=price&numericFilters=price>20,rating>=5
+```
+
+<br />
+
+
+4. Get Products ordenando de forma descendente segundo o parâmetro Name e de forma ascendente pelo parâmetro Price,e selecionando para o retorno dos dados apenas os campos Name e Price:
+```
+/api/v1/products?sort=-name price&field=name price
+```
+
+<br />
+
+
 ### Retornando uma query básica de todos os dados existentes:              
 ![Imagem de uma query básica de todos os dados existentes](/public/images/query-basica-retornando-todos-os-dados.png)
 
